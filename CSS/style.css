@@ -1,0 +1,496 @@
+/* 
+-----------------------
+Common CSS
+-----------------------
+*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.t-center{
+    text-align: center;
+}
+
+/* 
+-----------------------
+Header Top Area
+-----------------------
+*/
+
+.header_top_area{
+    height: 51px;
+    display: flex;
+    background: #ba2e1f;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_mini_menu ul{
+    margin-left: 20px;
+    display: flex;
+    list-style: none;
+}
+.header_mini_menu ul li a{
+ text-decoration: none;
+ margin-right: 15px;
+ color: #ffffff;
+}
+.header_mini_menu ul li{
+ position: relative;
+}
+.header_mini_menu ul li::after {
+    border: 1px solid white;
+    position: absolute;
+    content: "";
+    top: 2px;
+    height: 13px;
+    right: 7px;
+}
+.header_mini_menu ul li:last-child::after{
+    display: none;
+}
+.search_bar{
+    margin-right: 20px;
+}
+.search_bar input {
+    width: 210px;
+    height: 25px;
+    outline: none;
+    position: relative;
+    border: none;
+    border-radius: 20px;
+}
+.search_bar img {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+/* 
+-----------------------
+Header Bottom Area
+-----------------------
+*/
+
+.header_bottom_area {
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.social_icons{
+    margin-right: 20px;
+}
+.social_icons ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+.social_icons ul li a{
+    margin-right: 10px;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 50%;
+}
+.social_icons ul li a:hover{
+    background-color: #ee802f;
+    transition: all ease 0.5s;
+}
+.social_icons ul li a i {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+/* 
+-----------------------
+Main Menu Area
+-----------------------
+*/
+
+#main_menu{
+    margin: 0 20px;
+    margin-top: 41px;
+}
+.nav_container{
+    background-color: #333333;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+}
+.nav_container::after{
+    background-color: #2b2b2b;
+    width: 100%;
+    height: 50%;
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    border-radius: 8px;
+}
+.nav_container ul {
+    list-style: none;
+    text-align: center;
+    margin-left: 59px;
+    padding-top: 8px;
+    margin-right: 59px;
+}
+.nav_container ul li{
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+}
+.nav_container ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0 24px;
+    left: -9999px;
+}
+.nav_container ul li:hover a{
+    color: #ba2e1f;
+    transition: all ease 0.3s;
+}
+
+/* 
+-----------------------
+Drop Down Area
+-----------------------
+*/
+
+#main_menu ul ul {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: black;
+    width: 180px;
+    left: -99999999px;
+}
+#main_menu ul ul li {
+    padding: 8px 30px;
+    background: red;
+}
+#main_menu ul li:hover ul{
+    left: 0px;
+}
+#main_menu ul li:hover ul ul{
+    left: -99999px;
+}
+#main_menu ul li:hover ul li:hover ul{
+    left: 134px;
+}
+#main_menu ul ul li a {
+    color: white;
+    margin: 0;
+}
+#main_menu ul ul li:hover{
+    cursor: pointer;
+    background: #2b2b2b;
+    transition: all ease 0.3s;
+}
+#main_menu ul ul ul{
+    left: 134px;
+    top: 0px;
+}
+
+/* 
+-----------------------
+Hero Section Area
+-----------------------
+*/
+
+#hero_section{
+    margin: 25px 20px 0 20px;
+}
+.hero_container{
+    display: flex;
+    
+}
+.hero_text{
+    margin-left: 50px;
+    margin-top: 115px;
+}
+.hero_text h2{
+    
+    font-size: 86px;
+    font-weight: normal;
+}
+.hero_text p{
+    font-size: 16px;
+    font-weight: normal;
+    color: #666666;
+    margin-bottom: 23px;
+}
+.hero_text a {
+    text-decoration: none;
+    color: #ba2e1f;
+    right: 20px;
+    position: absolute;
+}
+
+/* 
+-----------------------
+Work Area
+-----------------------
+*/
+
+#work_area{
+    padding: 50px 20px;
+    background: #f2f2f2;
+}
+.work_container{
+    display: flex;
+    justify-content: space-between;
+}
+.work_container h2{
+    padding-bottom: 50px;
+    font-size: 26px;
+    color: #333333;
+}
+
+
+/* 
+-----------------------
+About Us Section
+-----------------------
+*/
+
+.about_us_area img{
+    padding-bottom: 20px;
+}
+.about_us_area p{
+    color: #878787;
+    padding-bottom: 10px;
+}
+.about_us_area a{
+    float: right;
+    text-decoration: none;
+    color: #b92d1f;
+    font-size: 13px;
+}
+
+
+/* 
+-----------------------
+Services Section
+-----------------------
+*/
+
+.services_area h3{
+    font-size: 14px;
+    color: #878787;
+    padding-bottom: 14px;
+}
+
+.services_area p{
+    font-size: 13px;
+    color: #878787;
+}
+.services_area a{
+    font-size: 13px;
+    color: #b92d1f;
+    text-decoration: none;
+    float: right;
+}
+.services_area .child{
+    font-size: 13px;
+    color: #878787;
+}
+.child_services .child_text{
+    float: right;
+    clear: both;
+}
+.child_services .child_img{
+    display: inline-block;
+}
+.child_services {
+    padding-bottom: 17px;
+}
+
+
+/* 
+-----------------------
+Clients Section
+-----------------------
+*/
+
+.child_clint {
+    margin-bottom: 32px;
+}
+.child_clint h3 {
+    background: url("../img/quotes.png") no-repeat;
+    font-size: 16px;
+    color: #989898;
+    padding-left: 66px;
+    padding-bottom: 40px;
+}
+.child_clint p {
+    font-size: 13px;
+    color: #888888;
+    padding-bottom: 14px;
+}
+.child_clint a {
+    font-size: 13px;
+    color: #b92d1f;
+    text-decoration: none;
+    float: right;
+}
+
+/* 
+-----------------------
+Contact Area
+-----------------------
+*/
+
+#contact_section{
+    margin: 50px 20px 30px 20px;
+}
+.contact_container h2{
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 33px;
+    position: relative;
+}
+.contact_container h2::before {
+    position: absolute;
+    top: -20px;
+    content: "";
+    border-top: 2px solid #666666;
+    width: 100%;
+    height: 100%;
+}
+.contact_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 
+-----------------------
+Form Section
+-----------------------
+*/
+
+.sec_1 p{
+    color: #666666;
+    font-size: 15px;
+}
+.sec_1 a{
+    color: #b92d1f;
+    text-decoration: none;
+}
+
+
+/* 
+-----------------------
+Link Section
+-----------------------
+*/
+
+
+.sec_2 ul{
+    list-style: none;
+}
+.sec_2 li {
+	list-style: none;
+	margin-bottom: 19px;
+	border-bottom: 1px solid #666666;
+	background: url("../img/link_iconl.png") no-repeat left;
+	padding-left: 20px;
+}
+.sec_2 li a{
+    text-decoration: none;
+    color: #666666;;
+}
+
+
+/* 
+-----------------------
+Blog Section
+-----------------------
+*/
+
+.child_blog{
+    padding-bottom: 22px;
+}
+.child_blog >a{
+    font-size: 12px;
+    color: #b82c1f;
+    float: right;
+}
+.blog_title h3{
+    font-size: 14px;
+    color: #666666;
+}
+.blog_title h5{
+    font-size: 10px;
+    color: #666666;
+    padding-bottom: 20px;
+}
+.blog_title h5 a{
+    font-size: 10px;
+    color: #b92d1f;
+}
+.blog_text p{
+    font-size: 12px;
+    color: #666666;
+    padding-bottom: 15px;
+}
+
+/* 
+-----------------------
+Form Section
+-----------------------
+*/
+.sec_4 form{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    border-radius: 10px;
+}
+.sec_4 form input {
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+}
+.sec_4 form textarea {
+    height: 110px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+}
+.sec_4 form ::placeholder {
+    padding-left: 10px;
+}
+.sec_4 form input[type="submit"] {
+    color: #ba2e1f;
+    width: 80px;
+}
+
+
+/* 
+-----------------------
+Footer Area
+-----------------------
+*/
+#footer_section{
+    height: 65px;
+    background: #f2f2f2;
+    padding: 0 20px;
+}
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    color: #919191;
+    font-size: 12px;
+}
